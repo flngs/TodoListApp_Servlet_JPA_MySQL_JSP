@@ -33,7 +33,7 @@ public class LoginUserServlet extends HttpServlet {
     private void authenticate(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String username = req.getParameter("username");
         String password = req.getParameter("password");
-        int result = userDao.getUser(username, password);
+        int result = userDao.getUserByUsernameAndPassword(username, password);
         if (result == 0) {
             HttpSession session = req.getSession();
             session.setAttribute("user", username);

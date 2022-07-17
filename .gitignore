@@ -1,5 +1,8 @@
 target/
-!.mvn/wrapper/maven-wrapper.jar
+.mvn
+.idea
+mvnw
+mvnw.cmd
 !**/src/main/**/target/
 !**/src/test/**/target/
 out
@@ -12,13 +15,3 @@ out
 *.iws
 *.iml
 *.ipr
-
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/

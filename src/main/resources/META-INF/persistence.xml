@@ -6,6 +6,7 @@
     <persistence-unit name="com.flngs.todoapp.model">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>com.flngs.todoapp.model.User</class>
+        <class>com.flngs.todoapp.model.Todo</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect"/>

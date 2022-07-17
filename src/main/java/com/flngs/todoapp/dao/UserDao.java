@@ -20,7 +20,7 @@ public class UserDao {
         em.close();
     }
 
-    public int getUser(String username, String password) {
+    public int getUserByUsernameAndPassword(String username, String password) {
         EntityManager em = getEntityManager();
         em.getTransaction().begin();
         TypedQuery<User> query = em.createQuery("SELECT user FROM User user WHERE username = :username" +
